@@ -3,17 +3,20 @@ import "./style.scss"
 
 const InputValid =()=>{
     const [value, setValue] = useState("");
-    const [newArray, setNewArray] = useState([]);
+    // const [newArray, setNewArray] = useState([]);
     const [stringlengt, setStringlengt] = useState(false);
-    console.log(newArray);
-
+  
 
     useEffect(() => {
-        newArray.push(value)
-        setNewArray([value])
+    console.log(stringlengt);
+    setStringlengt(value)
+        if(stringlengt.length>20){
+            
+        setStringlengt(true)}
     }, [value]);
     useEffect(() => {
-        setStringlengt(true)
+       
+       
     }, []);
    
 
@@ -24,7 +27,7 @@ const InputValid =()=>{
 
     return <div className='input-valid'>
 <label>
-    <input type ="text" value={value} onChange={ handleChange}/>
+    <input style={({stringlengt})?{ color:"red"}:{ color:"green"}} type ="text" value={value} onChange={ handleChange}/>
 </label>
     </div>
 }
