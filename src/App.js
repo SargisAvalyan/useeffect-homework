@@ -1,17 +1,11 @@
 import './App.css';
-import InputValid from './Components/inputValid';
-import RandomNumber from './Components/randomNumber';
-import ImageBoxes from './Components/ImageBoxes';
-import ConteinerBox from './Components/RandmColors';
+import ConteinerBox from './Components/useRef';
 
 function App() {
   return (
     <div className="App">
    <ConteinerBox />
-   <ImageBoxes />
-   <RandomNumber/>
-   <InputValid/>
-    </div>
+      </div>
   );
 }
 

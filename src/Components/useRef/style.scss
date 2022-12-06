@@ -1,0 +1,46 @@
+.G-Conteiner {
+    width: 100%;
+    min-width: 1000px;
+    min-height: 300px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.G-ConteinerBox {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.clrbutton {
+    width: 300px;
+    height: 60px;
+    background-color: rgb(14, 183, 212);
+    font-size: 20px;
+    border-radius: 12px;
+    border: 1.5px solid white;
+    cursor: pointer;
+    transition: 0.7s;
+    position: absolute;
+
+    &:hover {
+        background-color: rgb(92, 11, 11);
+        color: white;
+        font-size: 25px;
+    }
+}
+
+.focusInput {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid blue;
+   
+}
